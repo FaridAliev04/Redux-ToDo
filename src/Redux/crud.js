@@ -14,9 +14,19 @@ export const crud = createSlice({
         add:(state,action)=>{
             const newData=action.payload
             return [...state,{id:newData.id,text:newData.text}]
+        },
+        uptate:(state,action)=>{
+            
+            const {upText,test}=action.payload
+            const data=state.find(e=>e.id===test)
+            if(data){
+                data.text=upText
+            }
+            
+
         }
     },
 });
 
-export const {add, handleDelete } = crud.actions;
+export const {add, handleDelete,uptate} = crud.actions;
 export default crud.reducer;
