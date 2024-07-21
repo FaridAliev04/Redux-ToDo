@@ -12,11 +12,6 @@ const NewData = () => {
   const info=useSelector((e)=>e.crud)
   const infoMap=info.find((e)=>e.id==id)
 
-  // useEffect(()=>{
-  //   if(id==infoMap){
-  //     setPlaceholder(info.text)
-  //   }
-  // },[])
 
   const dispatch=useDispatch()
 
@@ -31,10 +26,13 @@ const NewData = () => {
     
   }
   return (
-    <div className='newDate-main'>
+    <div className='value'>
         <input placeholder={infoMap.text} onChange={(e)=>setValue(e.target.value)} type="text" className='neewData-inp' />
+        <div className="update-icons-div updata-icon-div">
         <MdOutlineDone onClick={()=>updataFunc()} className='done-icons change-icons'/>
-        <MdClear onClick={()=>clearFunc()} className='clear-icons change-icons' />
+        <MdClear onClick={()=>clearFunc()} className='clear-icons change-icons' />  
+        </div>
+        
 
     </div>
   )

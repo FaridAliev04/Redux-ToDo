@@ -24,8 +24,8 @@ const Update = () => {
   return (
     <div className='update-page'>
         {info?.map((e)=>{
-            return id===e.id?<NewData/>: <div key={e.id} className=''>
-                <h3>{e.text}</h3>
+            return id===e.id?<NewData/>: <div key={e.id} className='value'>
+                <h3 className='value-text'>{e.text}</h3>
                 <div className="update-icons-div">
                 <LuPenLine onClick={()=>updataFunc(e)} className="update-icon  change-icons" />
                 <MdDeleteForever onClick={()=>deleteFunc(e)}  className="delete-icon change-icons"/>

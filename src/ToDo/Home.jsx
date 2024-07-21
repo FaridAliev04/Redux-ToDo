@@ -9,7 +9,7 @@ import { add } from '../Redux/crud';
 const Home = () => {
     const dispatch=useDispatch()
     const info=useSelector((e)=>e.crud)
-    const [newText,setNewText]=useState('')
+    const [newText,setNewText]=useState("")
 
     const addFunc=()=>{
       if(newText!=""){

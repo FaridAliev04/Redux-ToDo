@@ -24,6 +24,10 @@ body {
   font-size: 1.2rem;
 }
 
+input{
+  outline: none;
+}
+
 .center-page{
   background: rgba( 166, 160, 160, 0.55 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -49,7 +53,6 @@ body {
     padding: 0.6rem;
     border-radius: 9px;
     border: 0;
-    outline: none;
 }
 .input-div{
   display: flex;
@@ -75,4 +78,51 @@ body {
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 30px;
   text-shadow: 1px 1px 2px #427388; 
+}
+
+.center-page::-webkit-scrollbar {
+  width: 5px; 
+}
+
+.center-page::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 10px;
+}
+
+.center-page::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.center-page::-webkit-scrollbar-thumb:hover {
+  background: #427388; 
+}
+.value{
+  display:  flex;
+  justify-content: space-between;
+}
+.update-icons-div{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+.update-icon{
+  color: orangered;
+}
+.delete-icon{
+  color: red;
+}
+.done-icons{
+  color: green;
+}
+.clear-icons{
+  color: red;
+}
+.neewData-inp{
+  border-radius: 9px;
+  border: 0 solid black;
+  padding: 0.2rem;
+}
+.updata-icon-div{
+  margin-top: 0.8rem;
 }
